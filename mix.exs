@@ -36,6 +36,7 @@ defmodule Inmana.MixProject do
       {:phoenix, "~> 1.5.9"},
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
+      {:ecto_sqlite3, "~> 0.5.5"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_live_dashboard, "~> 0.4"},
       {:telemetry_metrics, "~> 0.4"},

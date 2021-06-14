@@ -2,7 +2,9 @@ use Mix.Config
 
 # Configure your database
 config :inmana, Inmana.Repo,
-  database: "./db.sqlite"
+  database: "./db.sqlite",
+  temp_store: :memory,
+  journal_mode: :memory
 
 # For development, we disable any cache and enable
 # debugging and code reloading.

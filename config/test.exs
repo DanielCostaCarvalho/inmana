@@ -6,7 +6,9 @@ use Mix.Config
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :inmana, Inmana.Repo,
-  database: ":memory:",
+  database: "test.db",
+  temp_store: :memory,
+  journal_mode: :memory,
   pool: Ecto.Adapters.SQL.Sandbox
 
 config :inmana, Inmana.Mailer, adapter: Bamboo.TestAdapter
